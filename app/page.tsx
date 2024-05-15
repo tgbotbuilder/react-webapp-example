@@ -6,8 +6,7 @@ export default function Home() {
   const [isMounted, setIsMounted] = useState(false);
   useEffect(() => {
     setIsMounted(true);
-    console.log("Hello, world!");
-    console.log(window?.Telegram?.WebApp)
+    console.log(window.Telegram?.WebApp)
   }, []);
 
   if (!isMounted) return null;
