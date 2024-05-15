@@ -3,7 +3,20 @@ interface Window {
   Telegram: {
     WebApp: {
       initData: string,
-      initDataUnsafe: any,
+      initDataUnsafe: {
+        query_id: string,
+        user: {
+          id: 699381957,
+          first_name: string,
+          last_name: string,
+          username: string,
+          language_code: string,
+          is_premium: boolean,
+          allows_write_to_pm: boolean
+        },
+        auth_date: number,
+        hash: string
+      },
       version: string,
       platform: string,
       colorScheme: string,
