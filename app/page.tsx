@@ -7,7 +7,7 @@ export default function Home() {
   useEffect(() => {
     setIsMounted(true);
     console.log("Hello, world!");
-    console.log(window.Telegram?.WebApp)
+    console.log(window?.Telegram?.WebApp)
   }, []);
 
   if (!isMounted) return null;
@@ -16,7 +16,7 @@ export default function Home() {
     <main className="flex min-h-screen flex-col items-center justify-between p-2 md:p-10 lg:p-24">
       <h1 className="text-3xl font-bold text-center">Telegram Bot Builder webapp</h1>
       <pre>
-        {JSON.stringify(window.Telegram?.WebApp, null, 2)}
+        {JSON.stringify(window?.Telegram?.WebApp, null, 2)}
       </pre>
     </main>
   );

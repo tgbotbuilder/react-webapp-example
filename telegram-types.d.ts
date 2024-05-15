@@ -1,6 +1,6 @@
 // more info here https://core.telegram.org/bots/webapps#initializing-mini-apps
 declare global {
-  interface window {
+  interface Window {
     Telegram: {
       WebApp: {
         initData: string,
