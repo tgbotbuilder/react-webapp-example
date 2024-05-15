@@ -34,7 +34,7 @@ Done. Go to the chat with the bot and click the button to launch the Web App.
 
 ## Learn More
 
-TO learn more about Web Apps, take a look at the following resources:
+To learn more about Web Apps, take a look at the following resources:
 
 - [Web Apps Documentation](https://core.telegram.org/bots/webapps#designing-mini-apps) - learn about Web Apps features and API.
 
