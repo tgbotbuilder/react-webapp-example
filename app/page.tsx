@@ -20,6 +20,10 @@ export default function Home() {
     return isMounted ? <FormatCode /> : <Loader />
   }
 
+  const handleViewChange = () => {
+    setView(view === "profile" ? "code" : "profile")
+  }
+
   return (
     <main className="flex min-h-screen flex-col items-center gap-2 p-2 md:p-10 lg:p-24">
       <h1 className="text-3xl font-bold text-center">Telegram Bot Builder webapp</h1>
@@ -28,7 +32,9 @@ export default function Home() {
         <p className="">The library is available on the <a href="https://github.com/tgbotbuilder/react-webapp-example" className="underline text-blue-600">GitHub repository</a>.</p>
       </div>
       <div>
-        <button onClick={() => setView("code")} className="mt-4 bg-blue-600 text-white px-4 py-2 rounded">View code</button>
+        <button onClick={handleViewChange} className="mt-4 bg-blue-600 text-white px-4 py-2 rounded">
+          {view === "code" ? "View Profile" : "View Code"}
+        </button>
       </div>
       {
         view === "profile"
