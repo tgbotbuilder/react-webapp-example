@@ -20,7 +20,23 @@ You can start editing the page by modifying `app/page.tsx`. The page auto-update
 
 This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
+## How to configurate the bot
+Web Apps can be launched from a customized menu button. This simply offers a quicker way to access the app.
+By default, chats with bots always show a convenient menu button that provides quick access to all listed commands.
+With Bot API 6.0, this button can be used to launch a Web App instead.
+
+- Go to [BotFather](https://t.me/BotFather) in Telegram and write `/setmenubutton`.
+- Select the bot you want to configure.
+- Send the URL of the Web App you want to launch.
+- Send the text that will be displayed on the button.
+
+Done. Go to the chat with the bot and click the button to launch the Web App.
+
 ## Learn More
+
+TO learn more about Web Apps, take a look at the following resources:
+
+- [Web Apps Documentation](https://core.telegram.org/bots/webapps#designing-mini-apps) - learn about Web Apps features and API.
 
 To learn more about Next.js, take a look at the following resources:
 
